@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { ActivityComponent } from "./activity/activity.component";
+import { ListComponent } from "./list/list.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [MenuComponent, ActivityComponent, ListComponent], //Nombre de la clase a importar
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
